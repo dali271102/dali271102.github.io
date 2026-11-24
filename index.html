@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mohamed Ali Benghnia – Data Science &amp; AI</title>
+<script>document.documentElement.className+=" js"</script>
+<style>
+:root{--bg:#F3F6FB;--card:#fff;--text:#0B1730;--mut:#55657D;--line:#DAE3EF;--a1:#0891B2;--a2:#7C3AED;--chip:#E3F4F8;--chipt:#0E6F86;--hero:#070D1A;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#070D1A;--card:#0F1A30;--text:#E8EEF8;--mut:#93A4BD;--line:#1F3050;--a1:#22D3EE;--a2:#8B5CF6;--chip:#12303B;--chipt:#67E8F9;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#070D1A;--card:#0F1A30;--text:#E8EEF8;--mut:#93A4BD;--line:#1F3050;--a1:#22D3EE;--a2:#8B5CF6;--chip:#12303B;--chipt:#67E8F9;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth;background:linear-gradient(var(--hero),var(--hero)) top/100% env(safe-area-inset-top,0px) no-repeat,var(--bg)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:inherit}.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+.grad{background:linear-gradient(90deg,#22D3EE,#8B5CF6);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero{position:relative;background:radial-gradient(900px 400px at 80% 0,#1B1650 0,transparent 60%),var(--hero);color:#fff;overflow:hidden;padding:64px 0 72px;border-bottom:1px solid #1F3050}
+#net{position:absolute;inset:0;width:100%;height:100%}
+.hero .wrap{position:relative;display:grid;gap:32px;grid-template-columns:1.15fr .85fr;align-items:center}
+.tag{display:inline-block;font:600 .78rem/1 ui-monospace,Menlo,Consolas,monospace;letter-spacing:.1em;text-transform:uppercase;color:#67E8F9;border:1px solid #1F4A5C;background:#0B2230;padding:7px 12px;border-radius:999px}
+h1{font-size:clamp(2.2rem,6.5vw,3.8rem);line-height:1.05;margin:16px 0 10px;letter-spacing:-.02em}
+.type{font:500 1.05rem ui-monospace,Menlo,Consolas,monospace;color:#B9C7DD;min-height:1.7em}.type b{color:#22D3EE}
+.cur{display:inline-block;width:8px;height:1.1em;background:#22D3EE;vertical-align:-3px;margin-left:2px;animation:bl 1s steps(2) infinite}
+@keyframes bl{50%{opacity:0}}
+.hero p.s{max-width:540px;color:#A9B9D0;margin:14px 0 24px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{padding:11px 20px;border-radius:999px;text-decoration:none;font-weight:600;font-size:.92rem;border:1.5px solid #2B4A70;color:#fff;transition:.2s}
+.btn:hover{border-color:#22D3EE;transform:translateY(-2px)}
+.btn.p{background:linear-gradient(90deg,#22D3EE,#8B5CF6);border:0;color:#06101F}
+.term{background:#0A1426ee;border:1px solid #243A5E;border-radius:14px;box-shadow:0 0 60px #22D3EE22;font:.82rem/1.65 ui-monospace,Menlo,Consolas,monospace;color:#C9D6EA;overflow:hidden}
+.term .bar{display:flex;gap:6px;padding:10px 14px;background:#0F1D38}.term .bar i{width:10px;height:10px;border-radius:50%;background:#33466B}
+.term pre{margin:0;padding:14px 16px;overflow-x:auto;white-space:pre}
+.k{color:#C4A8FF}.s2{color:#7EE7C7}.c{color:#6B7FA3}
+#tg{position:fixed;right:14px;top:calc(12px + env(safe-area-inset-top,0px));z-index:5;width:38px;height:38px;border-radius:50%;border:1px solid #2B4A70;background:#0A1426cc;color:#fff;font-size:1rem;cursor:pointer}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:-34px;position:relative;z-index:2}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;text-align:center}
+.stat b{display:block;font-size:1.9rem;line-height:1.1}.stat span{color:var(--mut);font-size:.85rem}
+nav{display:flex;flex-wrap:wrap;gap:6px 20px;padding:22px 0 0;font-size:.9rem;color:var(--mut)}nav a{text-decoration:none}nav a:hover{color:var(--a1)}
+section{padding:38px 0 6px}
+h2{font-size:1.4rem;margin:0 0 18px;display:flex;align-items:center;gap:12px}
+h2::before{content:"";width:10px;height:10px;border-radius:3px;background:linear-gradient(135deg,var(--a1),var(--a2))}
+h2::after{content:"";flex:1;height:1px;background:var(--line)}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;transition:.25s}
+.card:hover{border-color:var(--a1);transform:translateY(-3px);box-shadow:0 10px 30px -12px var(--a1)}
+.card h3{margin:0 0 6px;font-size:1.02rem}.card h4{margin:0 0 10px;font:700 .74rem ui-monospace,Menlo,Consolas,monospace;text-transform:uppercase;letter-spacing:.09em;color:var(--a1)}
+.card p{margin:0 0 12px;color:var(--mut);font-size:.92rem}
+.chips{display:flex;flex-wrap:wrap;gap:6px}.chip{background:var(--chip);color:var(--chipt);border-radius:8px;padding:3px 10px;font-size:.78rem;font-weight:600}
+.flow{display:flex;flex-wrap:wrap;gap:10px;align-items:stretch}
+.node{flex:1 1 130px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;font-size:.85rem;position:relative;text-align:center}
+.node b{display:block;color:var(--a1);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px}
+.node:not(:last-child)::after{content:"→";position:absolute;right:-14px;top:50%;transform:translateY(-50%);color:var(--a2);font-weight:700;z-index:1}
+.note{color:var(--mut);font-size:.88rem;margin:12px 0 0}
+.tl{border-left:2px solid var(--line);margin-left:6px;padding-left:22px}
+.job{margin-bottom:22px;position:relative}
+.job::before{content:"";position:absolute;left:-29px;top:7px;width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,var(--a1),var(--a2));box-shadow:0 0 12px var(--a1)}
+.job b{display:block}.job .d{color:var(--mut);font-size:.85rem}.job ul{margin:6px 0 0;padding-left:18px;color:var(--mut);font-size:.92rem}
+.lang{margin-bottom:12px}.lang div{display:flex;justify-content:space-between;font-size:.88rem;margin-bottom:4px}
+.bar2{height:7px;border-radius:6px;background:var(--line);overflow:hidden}.bar2 i{display:block;height:100%;border-radius:6px;background:linear-gradient(90deg,var(--a1),var(--a2))}
+footer{margin-top:44px;padding:26px 0;border-top:1px solid var(--line);color:var(--mut);font-size:.86rem;text-align:center}
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}.js .rv.in{opacity:1;transform:none}
+@media (max-width:760px){.hero .wrap{grid-template-columns:1fr}.node:not(:last-child)::after{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<button id="tg" aria-label="Toggle theme">◐</button>
+<header class="hero"><canvas id="net"></canvas>
+<div class="wrap">
+<div>
+<span class="tag">Data Science · AI · BI</span>
+<h1>Mohamed Ali<br><span class="grad">Benghnia</span></h1>
+<div class="type">&gt; <b id="type"></b><span class="cur"></span></div>
+<p class="s">Data Science &amp; AI engineering student at Tek-Up University. I build machine learning models, LLM/RAG applications and BI pipelines, and I am looking for an internship or junior role.</p>
+<div class="btns"><a class="btn p" href="mailto:dbenghenia@gmail.com">Contact me</a><a class="btn" href="https://github.com/dali271102">GitHub</a><a class="btn" href="https://linkedin.com/in/mohammed-ali-benghenia812852283">LinkedIn</a></div>
+</div>
+<div class="term"><div class="bar"><i></i><i></i><i></i></div>
+<pre><span class="k">profile</span> = {
+  <span class="s2">"name"</span>: <span class="s2">"Mohamed Ali Benghnia"</span>,
+  <span class="s2">"studying"</span>: <span class="s2">"Data Science &amp; AI"</span>,
+  <span class="s2">"focus"</span>: [<span class="s2">"ML"</span>, <span class="s2">"LLM/RAG"</span>, <span class="s2">"BI"</span>],
+  <span class="s2">"certified"</span>: <span class="s2">"PCAP (Python)"</span>,
+  <span class="s2">"open_to"</span>: <span class="s2">"internship / junior"</span>,
+}
+<span class="c"># ready to ship models</span></pre></div>
+</div></header>
+
+<div class="wrap">
+<div class="stats">
+<div class="stat rv"><b class="grad" data-n="3">0</b><span>internships</span></div>
+<div class="stat rv"><b class="grad" data-n="4">0</b><span>featured projects</span></div>
+<div class="stat rv"><b class="grad">PCAP</b><span>Python certified</span></div>
+<div class="stat rv"><b class="grad">AR · FR · EN</b><span>working languages</span></div>
+</div>
+<nav><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#rag">RAG chatbot</a><a href="#experience">Experience</a><a href="#certs">Education</a><a href="#contact">Contact</a></nav>
+
+<section id="skills"><h2>Skills</h2>
+<div class="grid">
+<div class="card rv"><h4>AI &amp; Machine Learning</h4><div class="chips"><span class="chip">Scikit-learn</span><span class="chip">NLP</span><span class="chip">LLMs</span><span class="chip">RAG</span><span class="chip">LangChain</span><span class="chip">Ollama</span><span class="chip">NumPy</span><span class="chip">Matplotlib</span><span class="chip">Seaborn</span></div></div>
+<div class="card rv"><h4>Data &amp; BI</h4><div class="chips"><span class="chip">SQL / PL-SQL</span><span class="chip">SQL Server</span><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip">SSIS</span><span class="chip">Pandas</span></div></div>
+<div class="card rv"><h4>Programming</h4><div class="chips"><span class="chip">Python</span><span class="chip">Java</span><span class="chip">JavaScript</span><span class="chip">C</span></div></div>
+<div class="card rv"><h4>Frameworks</h4><div class="chips"><span class="chip">Streamlit</span><span class="chip">Django</span><span class="chip">.NET (ASP.NET Core)</span><span class="chip">Angular</span><span class="chip">Node.js</span><span class="chip">PHP</span></div></div>
+<div class="card rv"><h4>DevOps &amp; Tools</h4><div class="chips"><span class="chip">Git</span><span class="chip">Docker</span><span class="chip">AWS</span><span class="chip">Jira</span><span class="chip">UML</span><span class="chip">StarUML</span><span class="chip">Draw.io</span></div></div>
+<div class="card rv"><h4>Languages</h4>
+<div class="lang"><div><span>Arabic</span><span>Native</span></div><div class="bar2"><i style="width:100%"></i></div></div>
+<div class="lang"><div><span>French</span><span>Advanced</span></div><div class="bar2"><i style="width:85%"></i></div></div>
+<div class="lang"><div><span>English</span><span>Advanced</span></div><div class="bar2"><i style="width:85%"></i></div></div>
+<div class="lang"><div><span>Spanish</span><span>Beginner</span></div><div class="bar2"><i style="width:25%"></i></div></div></div>
+</div></section>
+
+<section id="projects"><h2>Projects</h2>
+<div class="grid">
+<div class="card rv"><h3>Athena Hospital</h3><p>Intelligent hospital management platform for a Tunisian hospital (team of 3): an AI orchestrator agent, RAG chatbots and voice-based appointment booking. I own the Consultations module.</p><div class="chips"><span class="chip">Django</span><span class="chip">PostgreSQL</span><span class="chip">RAG</span><span class="chip">Groq</span></div></div>
+<div class="card rv"><h3>AI Agent XP</h3><p>Windows desktop AI agent with a Groq LLM, Telegram bot, RAG and a voice assistant.</p><div class="chips"><span class="chip">Python</span><span class="chip">Tkinter</span><span class="chip">Groq</span><span class="chip">RAG</span></div></div>
+<div class="card rv"><h3>MediBook</h3><p>Medical appointment chatbot built with the Gemini API.</p><div class="chips"><span class="chip">Gemini API</span><span class="chip">Chatbot</span></div></div>
+<div class="card rv"><h3>CinemaDb</h3><p>ASP.NET Core MVC application with Entity Framework Core and CRUD on movies, genres and customers.</p><div class="chips"><span class="chip">ASP.NET Core</span><span class="chip">EF Core</span></div></div>
+</div></section>
+
+<section id="rag"><h2>Offline RAG chatbot</h2>
+<div class="flow rv">
+<div class="node"><b>1 · Documents</b>company knowledge</div>
+<div class="node"><b>2 · Embeddings</b>nomic-embed-text</div>
+<div class="node"><b>3 · Retrieval</b>relevant context</div>
+<div class="node"><b>4 · LLM</b>Llama 3.2 on Ollama</div>
+<div class="node"><b>5 · Interface</b>Streamlit app</div>
+</div>
+<p class="note">Built during my internship at Tunisianet. The whole pipeline runs locally and fully offline.</p></section>
+
+<section id="experience"><h2>Experience</h2>
+<div class="tl">
+<div class="job rv"><b>Data Science &amp; AI Intern – Tunisianet, Logistics Department</b><span class="d">Jul – Sep 2026</span><ul><li>Designed and deployed a local RAG chatbot (Ollama, Llama 3.2, nomic-embed-text) running fully offline</li><li>Built a Streamlit web application to query the chatbot</li></ul></div>
+<div class="job rv"><b>Business Intelligence Analyst Intern – Tunisie Telecom</b><span class="d">Feb – May 2025 · Central Information Systems Directorate</span><ul><li>Analyzed customer complaints using web scraping and NLP</li><li>Developed a Python ETL pipeline into a Data Warehouse</li><li>Built interactive Power BI dashboards and ML models for complaint volume forecasting</li></ul></div>
+<div class="job rv"><b>Technical Maintenance Intern – STEG</b><span class="d">Jun – Aug 2024</span><ul><li>Preventive and corrective maintenance on transformers, generators and pipelines; reduced downtime across 8+ critical assets</li></ul></div>
+</div></section>
+
+<section id="certs"><h2>Education &amp; Certifications</h2>
+<div class="grid">
+<div class="card rv"><h3>Engineering Degree in CS (Data Science &amp; AI)</h3><p>Tek-Up University · 2025 – Present</p></div>
+<div class="card rv"><h3>Bachelor’s Degree in Business Intelligence</h3><p>University of Jendouba · 2022 – 2025</p></div>
+<div class="card rv"><h3>PCAP – Certified Associate in Python Programming</h3><p>2026</p></div>
+<div class="card rv"><h3>Introduction to Data Science · JavaScript</h3><p>Online certifications</p></div>
+</div></section>
+
+<section id="contact"><h2>Contact</h2>
+<div class="card rv"><p style="margin:0 0 14px">Open to internships and junior roles in Data Science, AI and BI. Based in Borj Louzir, Ariana, Tunisia.</p>
+<div class="btns"><a class="btn p" href="mailto:dbenghenia@gmail.com">dbenghenia@gmail.com</a><a class="btn" style="color:var(--text)" href="https://github.com/dali271102">github.com/dali271102</a><a class="btn" style="color:var(--text)" href="https://linkedin.com/in/mohammed-ali-benghenia812852283">LinkedIn</a></div></div></section>
+<footer>© 2026 Mohamed Ali Benghnia</footer>
+</div>
+
+<script>
+(function(){
+var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+var cv=document.getElementById("net"),ctx=cv.getContext("2d"),w,h,pts=[];
+function size(){var r=cv.parentNode.getBoundingClientRect(),d=window.devicePixelRatio||1;w=r.width;h=r.height;cv.width=w*d;cv.height=h*d;ctx.setTransform(d,0,0,d,0,0);
+var n=Math.min(70,Math.floor(w*h/13000));pts=[];for(var i=0;i<n;i++)pts.push({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35});}
+function draw(){ctx.clearRect(0,0,w,h);var i,j,p,q,dx,dy,dd;
+for(i=0;i<pts.length;i++){p=pts[i];if(!reduce){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>w)p.vx*=-1;if(p.y<0||p.y>h)p.vy*=-1;}}
+for(i=0;i<pts.length;i++){p=pts[i];for(j=i+1;j<pts.length;j++){q=pts[j];dx=p.x-q.x;dy=p.y-q.y;dd=Math.sqrt(dx*dx+dy*dy);
+if(dd<120){ctx.strokeStyle="rgba(34,211,238,"+(0.25*(1-dd/120))+")";ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(q.x,q.y);ctx.stroke();}}
+ctx.fillStyle="rgba(139,92,246,.9)";ctx.beginPath();ctx.arc(p.x,p.y,2,0,7);ctx.fill();}
+if(!reduce)requestAnimationFrame(draw);}
+size();draw();addEventListener("resize",function(){size();if(reduce)draw();});
+
+var words=["Machine Learning models","LLM & RAG applications","ETL pipelines & Power BI","Data Science & AI projects"],el=document.getElementById("type"),wi=0,ci=0,del=false;
+function tick(){var wd=words[wi];if(reduce){el.textContent=wd;return;}
+el.textContent=wd.slice(0,ci);
+if(!del&&ci<wd.length){ci++;setTimeout(tick,60);}
+else if(!del){del=true;setTimeout(tick,1400);}
+else if(ci>0){ci--;setTimeout(tick,30);}
+else{del=false;wi=(wi+1)%words.length;setTimeout(tick,300);}}
+tick();
+
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");var c=e.target.querySelector("[data-n]");if(c&&!c.done){c.done=1;var t=+c.dataset.n,v=0,s=setInterval(function(){v++;c.textContent=v;if(v>=t)clearInterval(s);},reduce?1:260);}io.unobserve(e.target);}});},{threshold:.15});
+document.querySelectorAll(".rv").forEach(function(n){io.observe(n);});
+
+var root=document.documentElement;
+document.getElementById("tg").onclick=function(){var dark=root.dataset.theme?root.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;root.dataset.theme=dark?"light":"dark";};
+})();
+</script>
+</body>
+</html>
